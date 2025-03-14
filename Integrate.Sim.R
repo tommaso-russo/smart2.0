@@ -1,4 +1,4 @@
-Update.Sim = function(x, final_fleet){
+Integrate.Sim = function(x, final_fleet){
   x = suppressMessages(left_join(x, unique(data.frame(CFR = as.character(final_fleet$CFR),
                                               MONTH = final_fleet$MONTH,
                                               loa = final_fleet$loa,
