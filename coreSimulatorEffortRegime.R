@@ -3,7 +3,8 @@ coreSimulatorEffortRegime <- function(x,
                                       patterns, 
                                       effort.regime = 100,
                                       scale.factor = 100,
-                                      apply.regime = F) {
+                                      apply.regime = F,
+                                      noise = 0.005) {
   
   # Convertiamo IBM.sim e patterns in data.table per migliorare la velocità
   setDT(x)
