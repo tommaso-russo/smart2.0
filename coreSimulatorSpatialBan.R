@@ -4,7 +4,8 @@ coreSimulatorSpatialBan <- function(x,
                                       fra.cells,
                                       effort.regime = 100,
                                       scale.factor = 100,
-                                      apply.regime = F) {
+                                      apply.regime = F,
+                                      noise = 0.005) {
   
   setDT(x)
   setDT(patterns)
